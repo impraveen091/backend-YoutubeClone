@@ -8,7 +8,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 // Generate unique public ID
-const publicId = `shoes_${Date.now()}`;
+const publicId = `${Date.now()}`;
 
 // Cloudinary Upload Function
 const uploadOnCloudinary = async (localFilePath) => {
